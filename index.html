@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sir Chief's Motorshop">
     <title>Sir Chief's Motorshop</title>
-         <link rel="icon" href="SIR CHIEF’S (4).png" type="image/png">
+    <link rel="icon" href="SIR CHIEF’S (4).png" type="image/png">
     <style>
         body {
             font-family: verdana, sans-serif;
@@ -16,43 +16,45 @@
             background-color: #f4f4f9;
             color: #333;
         }
-    header {
-    background: #FFFFFF;
-    color: #333;
-    text-align: center; 
-}
 
-nav ul {
-    display: inline-flex;
-    align-items: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+        header {
+            background: #FFFFFF;
+            color: #333;
+            text-align: center;
+        }
 
-nav li {
-    margin-left: 35px;
-    margin-right: 35px; //sa space to
-}
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
 
-nav img.logo {
-    width: 220px; 
-    height: auto; 
-}
+        nav li {
+            margin: 0 35px; /* Added space for navigation items */
+        }
 
-nav a {
-    text-decoration: none; 
-    color: black;
-    font-size: 20px; 
-}
+        nav img.logo {
+            width: 220px;
+            height: auto;
+        }
 
-nav a:hover {
-    color: indianred; 
-}
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            color: indianred;
+        }
+
         section {
             padding: 20px;
             text-align: center;
         }
+
         footer {
             background: #333;
             color: #fff;
@@ -63,9 +65,36 @@ nav a:hover {
             width: 100%;
         }
 
+        /* Home section with background image */
+        #home {
+            background-image: url('b502fffab7dace64d090089c4fbb402a.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 50px;
+            color: white;
+        }
+         #about {
+            background-color: #014235;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 50px;
+            color: white;
+        }
 
+        #home h1 {
+            font-family: times;
+            font-size: 80px;
+            font-stretch: condensed;
+            letter-spacing: -2.5px;
+            margin-bottom: 10px;
+            margin-top: 220px;
+            line-height: 1.2;
+        }
 
-         @media (max-width: 768px) {
+        /* Media Queries for smaller screens */
+        @media (max-width: 768px) {
             nav ul {
                 flex-direction: column;
             }
@@ -108,53 +137,34 @@ nav a:hover {
 </head>
 <body>
     <header>
-
         <nav>
-            <center>
-             <ul>
-                <li><a href="#home"><img src="SIR CHIEF’S (5).png" class="logo"></a></li>
+            <ul>
+                <li><a href="#home"><img src="SIR CHIEF’S (5).png" class="logo" alt="Logo"></a></li>
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#contact">CONTACT</a></li>
                 <li><a href="#shop">SHOP</a></li>
             </ul>
-            </center>
         </nav>
     </header>
+
     <section id="home">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    <h1 style="font-family: times;font-size: 80px;font-stretch: condensed;letter-spacing: -2.5px; margin-bottom: 10px;margin-top: 10px; line-height: 1.2;">WELCOME TO SIR CHIEF'S MOTORSHOP</h1>
-   <div class="container">
-  <p>Sir Chief's Motorshop is your premier destination for motorcycle<br> repair and maintenance services. Our shop is a <br>great place for you to find high-quality products and <br>let you know more about our commitment to excellent service.</p>
-</div>
-
-</section>
-
-<style>
-    /* Add background image to the home section */
-    #home {
-        background-image: url('b502fffab7dace64d090089c4fbb402a.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding: 50px;
-        color: white;
-    }
-</style>
+        <h1 style="margin-top: 220px;">WELCOME TO SIR CHIEF'S MOTORSHOP</h1>
+        <div class="container">
+            <p>Sir Chief's Motorshop is your premier destination for motorcycle repair and maintenance services. Our shop is a great place for you to find high-quality products and learn more about our commitment to excellent service.</p>
+        </div>
+    </section>
 
     <section id="about">
         <h2>About</h2>
-        <h1>emeDNQANSKCQS;FKCQ;SAMC;QMD;AVMC;DF</h1>
+        <p>Some placeholder text for the about section.</p>
     </section>
+
     <section id="contact">
         <h2>Contact</h2>
-        <p>AKSDQSA;CLQ;FCKN;MQ;FMQ;LCMQSCKQNNDWDWM</p>
+        <p>Some placeholder text for the contact section.</p>
     </section>
+
     <footer>
         <p>&copy; 2024 Sir Chief's</p>
     </footer>
