@@ -25,6 +25,7 @@
 
         nav ul {
             display: flex;
+            align-items: center;
             justify-content: center;
             list-style-type: none;
             margin: 0;
@@ -32,7 +33,11 @@
         }
 
         nav li {
-            margin: 0 35px; /* Added space for navigation items */
+            margin-left: 35px;
+            margin-right: 35px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            align-items: center;
         }
 
         nav img.logo {
@@ -56,11 +61,12 @@
         }
 
         .container {
-            width: 80%;            
-            max-width: 600px;     
-            margin: 0 auto;        
-            padding: 20px;         
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
         }
+
         footer {
             background: #333;
             color: #fff;
@@ -80,12 +86,14 @@
             padding: 50px;
             color: white;
         }
-         #about {
+        
+        /* About section */
+        #about {
             background-color: #014235;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            padding: 50px;
+            padding: 50px 20px;
             color: white;
         }
 
@@ -99,7 +107,37 @@
             line-height: 1.2;
         }
 
-        /* Media Queries for smaller screens */
+        #about {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .about-container {
+            display: flex;
+            margin: 0;
+            justify-content: center;
+            gap: 1px;
+            flex-wrap: wrap;
+        }
+
+        .about-item {
+            flex: 1%;
+            max-width: 250px;
+            padding: 15px;
+            border: 1px;
+            margin: 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Contact section */
+        #contact {
+            background-color: #333;
+            padding: 50px 20px;
+            color: white;
+            text-align: center;
+        }
+
         @media (max-width: 768px) {
             nav ul {
                 flex-direction: column;
@@ -162,8 +200,20 @@
     </section>
 
     <section id="about">
-        <h2>About</h2>
-        <p>Some placeholder text for the about section.</p>
+        <div class="about-container">
+            <div class="about-item">
+                <h3 style="font-family: times; font-size: 160%;">OUR EXPERTISE</h3>
+                <p>At Sir Chief's Motorshop, our team of technicians are experts in motorcycle repair and maintenance. We are dedicated to providing top-notch service to all our customers.</p>
+            </div>
+            <div class="about-item">
+                <h3 style="font-family: times;font-size: 160%;">MOTORCYCLE ACCESSORIES</h3>
+                <p>Explore a wide range of motorcycle accessories at Sir Chief's Motorshop. We offer high-quality accessories to enhance your riding experience.</p>
+            </div>
+            <div class="about-item">
+                <h3 style="font-family: times;font-size: 160%;">EMERGENCY ASSISTANCE</h3>
+                <p>At Sir Chief's Motorshop, we provide reliable breakdown services to ensure you get back on the road quickly and safely.</p>
+            </div>
+        </div>
     </section>
 
     <section id="contact">
