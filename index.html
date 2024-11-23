@@ -67,6 +67,8 @@
             padding: 20px;
         }
 
+    
+        
         footer {
             background: #333;
             color: #fff;
@@ -77,6 +79,7 @@
             width: 100%;
         }
 
+        /* Home section with background image */
         #home {
             background-image: url('b502fffab7dace64d090089c4fbb402a.jpg');
             background-size: cover;
@@ -85,9 +88,13 @@
             padding: 50px;
             color: white;
         }
-
+        
+        /* About section */
         #about {
             background-color: #014235;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             padding: 50px 20px;
             color: white;
         }
@@ -109,6 +116,7 @@
 
         .about-container {
             display: flex;
+            margin: 0;
             justify-content: center;
             gap: 1px;
             flex-wrap: wrap;
@@ -124,74 +132,82 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        #contact {
-            background-color: #fff;
-            padding-top: 30px;
-            padding-bottom: 90px;
-            color: #333;
-            text-align: center;
-        }
+       /* Contact section */
+#contact {
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 90px;
+    color: #333;
+    text-align: center;
+    gap: 1px;
+    display: flex;
+    flex-direction: column; /* Default to column layout for mobile first */
+    align-items: center; /* Center the content */
+}
 
-        .container2 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-        }
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px; /* Ensure some space below each container */
+}
 
-        .container2 img {
-            max-width: 70%;
-            height: auto;
-            border-radius: 8px;
-            margin-top: 10px;
-        }
+.container2 img {
+    max-width: 70%; /* Ensure the image is responsive */
+    height: auto;
+    border-radius: 8px; /* Optional: rounded corners for the image */
+    margin-top: 10px; /* Add a small margin-top to the image to control the gap */
+}
 
-        .container2:nth-child(1) {
-            padding-left: 200px;
-            padding-bottom: 0px;
-        }
 
-        .container2:nth-child(2) {
-            padding-right: 100px;
-        }
+.container2:nth-child(1) {
+    padding-left: 200px;
+    padding-bottom: 0px; /* Reduce padding below text */
+}
 
-        @media (min-width: 768px) {
-            #contact {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                text-align: left;
-            }
+.container2:nth-child(2) {
+    padding-right: 100px;
+}
 
-            .container2 {
-                flex: 1;
-                margin: 0 20px;
-            }
+ 
 
-            .container2 img {
-                width: 100%;
-            }
+/* Media Query for larger devices */
+@media (min-width: 768px) {
+    #contact {
+        flex-direction: row; /* Arrange containers in a row for larger screens */
+        justify-content: space-between; /* Distribute space between containers */
+        text-align: left; /* Align text left on larger screens */
+    }
 
-            #contact .container2:nth-child(1) {
-                text-align: left;
-            }
-        }
+    .container2 {
+        flex: 1; /* Allow each container to take equal width */
+        margin: 0 20px; /* Add space between the containers */
+    }
 
-        @media (max-width: 768px) {
-            #contact {
-                flex-direction: column;
-            }
+    .container2 img {
+        width: 80%; /* Make the image smaller for large screens */
+    }
+}
 
-            .container2 {
-                margin: 10px;
-            }
+/* Media Query for smaller mobile devices */
+@media (max-width: 480px) {
+    .container2 img {
+        width: 90%; /* Adjust image size for very small screens */
+    }
 
-            .container2 img {
-                width: 80%;
-                margin-top: 20px;
-            }
-        }
+    .container2 h2 {
+        font-size: 140%; /* Adjust heading size */
+    }
+
+    .container2 p {
+        font-size: 100%; /* Adjust text size for smaller screens */
+    }
+}
+
+
+ 
 
         @media (max-width: 768px) {
             nav ul {
@@ -248,44 +264,47 @@
     </header>
 
     <section id="home">
-        <h1>WELCOME TO SIR CHIEF'S MOTORSHOP</h1>
+        <h1 style="margin-top: 120px;">WELCOME TO SIR CHIEF'S MOTORSHOP</h1>
         <div class="container">
-            <p>Sir Chief's Motorshop is your premier destination for motorcycle repair and maintenance services. Our shop is a great place for you to find high-quality products and learn more about our commitment to excellent service.</p>
+            <p style="font-size: 120%;">Sir Chief's Motorshop is your premier destination for motorcycle repair and maintenance services. Our shop is a great place for you to find high-quality products and learn more about our commitment to excellent service.</p>
         </div>
     </section>
 
     <section id="about">
         <div class="about-container">
             <div class="about-item">
-                <h3>OUR EXPERTISE</h3>
+                <h3 style="font-family: times; font-size: 160%;">OUR EXPERTISE</h3> <br>
                 <p>At Sir Chief's Motorshop, our team of technicians are experts in motorcycle repair and maintenance. We are dedicated to providing top-notch service to all our customers.</p>
             </div>
             <div class="about-item">
-                <h3>MOTORCYCLE ACCESSORIES</h3>
+                <h3 style="font-family: times;font-size: 160%;">MOTORCYCLE ACCESSORIES</h3>
                 <p>Explore a wide range of motorcycle accessories at Sir Chief's Motorshop. We offer high-quality accessories to enhance your riding experience.</p>
             </div>
             <div class="about-item">
-                <h3>EMERGENCY ASSISTANCE</h3>
+                <h3 style="font-family: times;font-size: 160%;">EMERGENCY ASSISTANCE</h3>
                 <p>At Sir Chief's Motorshop, we provide reliable breakdown services to ensure you get back on the road quickly and safely.</p>
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <div class="container2">
-            <center>
-                <h2>VISIT OUR STORE</h2>
-                <p>Come and visit Sir Chief's Motorshop to experience our exceptional services and explore our extensive range of motorcycle products and accessories. Book your visit today!</p>
-                <p style="background-color:#014235; color: #fff; text-align: center; height: 45px; width: 250px; display: flex; justify-content: center; align-items: center;">SCHEDULE YOUR VISIT</p>
-            </center>
-        </div>
-        <div class="container2">
-            <img src="f4a201bb4eab82b51dca174e85149311.jpg" alt="Store Image" />
-        </div>
-    </section>
+   <section id="contact">
+    <div class="container2">
+        <center>
+        <h2 style="font-family: times; font-size: 170%;letter-spacing: 1; margin-bottom: 0px;">VISIT OUR STORE</h2>
+        <p style="font-size: 120%; padding-bottom: 10px;">Come and visit Sir Chief's Motorshop to experience our exceptional services and explore our extensive range of motorcycle products and accessories. Book your visit today!</p>
+        <p style="padding-bottom: 10px; background-color:#014235; color: #fff; text-align: center; display: flex; justify-content: center; align-items: center; height: 45px; width: 250px">SCHEDULE YOUR VISIT
+</p>
+
+    </center>
+    </div>
+    <div class="container2">
+        <br>
+        <img src="f4a201bb4eab82b51dca174e85149311.jpg" alt="Store Image" />
+    </div>
+</section>
 
     <footer>
-        <p>&copy; 2024 Sir Chief's</p>
+        <p style="font-family: times;font-size: 120%;">&copy; 2024 Sir Chief's</p>
     </footer>
 </body>
 </html>
