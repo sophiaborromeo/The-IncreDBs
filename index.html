@@ -140,8 +140,8 @@
             gap: 1px;
             display: flex;
             flex-wrap: wrap;
-            flex-direction: column; /* Default to column layout for mobile-first */
-            align-items: center; /* Center the content */
+            flex-direction: column;
+            align-items: center; 
         }
 
         /* Containers in the contact section */
@@ -152,12 +152,12 @@
             align-items: center;
             text-align: center;
             flex-wrap: wrap;
-            margin-bottom: 30px; /* Ensure space below each container */
+            margin-bottom: 30px;
         }
 
         /* Ensure the image fits well on different screen sizes */
         .container2 img {
-            max-width: 100%; /* Image will scale down based on available space */
+            max-width: 70%; 
             height: auto;
             border-radius: 8px;
             margin-top: 10px;
@@ -166,38 +166,38 @@
         /* Media Query for larger devices */
         @media (min-width: 768px) {
             #contact {
-                flex-direction: row; /* Arrange containers in a row for larger screens */
-                justify-content: space-between; /* Distribute space between containers */
-                text-align: left; /* Align text left on larger screens */
+                flex-direction: row;
+                justify-content: space-between; 
+                text-align: left; 
             }
 
             .container2 {
-                flex: 1; /* Allow each container to take equal width */
-                margin: 0 20px; /* Add space between the containers */
+                flex: 1;
+                margin: 0 20px; 
             }
 
             .container2 img {
-                width: 80%; /* Make the image smaller for large screens */
+                width: 80%; 
             }
         }
 
         /* Media Query for very small screens */
         @media (max-width: 480px) {
             .container2 img {
-                width: 90%; /* Adjust image size for small screens */
+                width: 90%;
             }
 
             .container2 h2 {
-                font-size: 140%; /* Adjust heading size */
+                font-size: 140%;
             }
 
             .container2 p {
-                font-size: 100%; /* Adjust text size for smaller screens */
+                font-size: 100%;
             }
 
             #contact {
-                padding-top: 20px; /* Reduce padding on smaller screens */
-                padding-bottom: 30px; /* Adjust bottom padding for small screens */
+                padding-top: 20px;]
+                padding-bottom: 30px;
             }
         }
 
