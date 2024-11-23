@@ -67,11 +67,13 @@
             padding: 20px;
         }
 
+    
+        
         footer {
             background: #333;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
+            padding: 10px;
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -132,11 +134,82 @@
 
         /* Contact section */
         #contact {
-            background-color: #333;
-            padding: 50px 20px;
-            color: white;
+            background-color: #fff;
+            padding-top: 30px;
+            padding-bottom: 90px;
+            color: #333;
             text-align: center;
+            gap: 1px;
+
         }
+
+        .container2 {
+            display: flex; /* Enable flexbox */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Align items vertically */
+            margin-right: 0px;
+            text-align: center;
+            flex-direction: column;
+            justify-content: flex-start;
+            text-align: center; 
+        }
+
+        .container2 img {
+    max-width: 70%; /* Ensure the image is responsive */
+    height: auto;
+    border-radius: 8px; /* Optional: rounded corners for the image */
+    margin-top: 10px; /* Add a small margin-top to the image to control the gap */
+}
+
+
+.container2:nth-child(1) {
+    padding-left: 200px;
+    padding-bottom: 0px; /* Reduce padding below text */
+}
+
+.container2:nth-child(2) {
+    padding-right: 100px;
+}
+
+ 
+
+        @media (min-width: 768px) {
+            #contact {
+                display: flex; /* Enable flexbox layout */
+                flex-direction: row; /* Arrange containers in a row for larger screens */
+                justify-content: space-between; /* Distribute the space between the containers */
+                text-align: left; /* Align the text to the left for larger screens */
+            }
+
+            .container2 {
+                flex: 1; /* Make each container take up equal width */
+                margin: 0 20px; /* Space between containers */
+            }
+
+            .container2 img {
+                width: 100%; /* Make the image responsive on larger screens */
+            }
+
+            #contact .container2:nth-child(1) {
+                text-align: left; /* Align the text left in the first container */
+            }
+        }
+
+        @media (max-width: 768px) {
+            #contact {
+                flex-direction: column; /* Stack the containers vertically on smaller screens */
+            }
+
+            .container2 {
+                margin: 10px; /* Add spacing between stacked containers */
+            }
+
+            .container2 img {
+                width: 80%; /* Optional: adjust the image width for mobile */
+                margin-top: 20px; /* Add some spacing above the image on mobile */
+            }
+        }
+
 
         @media (max-width: 768px) {
             nav ul {
@@ -193,16 +266,16 @@
     </header>
 
     <section id="home">
-        <h1 style="margin-top: 130px;">WELCOME TO SIR CHIEF'S MOTORSHOP</h1>
+        <h1 style="margin-top: 120px;">WELCOME TO SIR CHIEF'S MOTORSHOP</h1>
         <div class="container">
-            <p>Sir Chief's Motorshop is your premier destination for motorcycle repair and maintenance services. Our shop is a great place for you to find high-quality products and learn more about our commitment to excellent service.</p>
+            <p style="font-size: 120%;">Sir Chief's Motorshop is your premier destination for motorcycle repair and maintenance services. Our shop is a great place for you to find high-quality products and learn more about our commitment to excellent service.</p>
         </div>
     </section>
 
     <section id="about">
         <div class="about-container">
             <div class="about-item">
-                <h3 style="font-family: times; font-size: 160%;">OUR EXPERTISE</h3>
+                <h3 style="font-family: times; font-size: 160%;">OUR EXPERTISE</h3> <br>
                 <p>At Sir Chief's Motorshop, our team of technicians are experts in motorcycle repair and maintenance. We are dedicated to providing top-notch service to all our customers.</p>
             </div>
             <div class="about-item">
@@ -216,13 +289,24 @@
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Some placeholder text for the contact section.</p>
-    </section>
+   <section id="contact">
+    <div class="container2">
+        <center>
+        <h2 style="font-family: times; font-size: 170%;letter-spacing: 1; margin-bottom: 0px;">VISIT OUR STORE</h2>
+        <p style="font-size: 120%; padding-bottom: 10px;">Come and visit Sir Chief's Motorshop to experience our exceptional services and explore our extensive range of motorcycle products and accessories. Book your visit today!</p>
+        <p style="padding-bottom: 10px; background-color:#014235; color: #fff; text-align: center; display: flex; justify-content: center; align-items: center; height: 45px; width: 250px">SCHEDULE YOUR VISIT
+</p>
+
+    </center>
+    </div>
+    <div class="container2">
+        <br>
+        <img src="f4a201bb4eab82b51dca174e85149311.jpg" alt="Store Image" />
+    </div>
+</section>
 
     <footer>
-        <p>&copy; 2024 Sir Chief's</p>
+        <p style="font-family: times;font-size: 120%;">&copy; 2024 Sir Chief's</p>
     </footer>
 </body>
 </html>
